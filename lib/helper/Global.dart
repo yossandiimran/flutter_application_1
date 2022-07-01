@@ -19,7 +19,7 @@ class Global {
   }
 
   //Handle Service ===============================================================
-  var baseUrl = 'http://192.168.1.128/hr/api/';
+  var baseUrl = 'http://10.0.2.2:30/e-patroli/public/api/';
 
   getMainServiceUrl(String link) {
     var url = Uri.parse(this.baseUrl + link);

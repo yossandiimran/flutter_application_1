@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
               size: global.getWidth(context) / 5,
             ),
             Text(
-              "Check Ekspedisi",
+              "ini tampilan Home",
               style: global.styleText2(global.getWidth(context) / 17),
             )
           ],
@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
               size: global.getWidth(context) / 5,
             ),
             Text(
-              "Daftar Ekspedisi",
+              "Berita 2",
               style: global.styleText2(global.getWidth(context) / 17),
             )
           ],

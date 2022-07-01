@@ -10,11 +10,11 @@ class LoginService {
   Future loginService() async {
     global.loadingAlert(context, "Mohon Tunggu", true);
 
-    var url = global.getMainServiceUrl('ekspedisi/login');
+    var url = global.getMainServiceUrl('login');
 
     try {
       await http.post(url, body: {
-        'username': this.username,
+        'email': this.username,
         'password': this.password,
       }).then((res) async {
         var data = json.decode(res.body);

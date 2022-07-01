@@ -14,6 +14,14 @@ class _LoginState extends State<Login> {
   bool obsText = true;
   TextEditingController username = TextEditingController();
   TextEditingController password = TextEditingController();
+
+  @override
+  void dispose() {
+    username.dispose();
+    password.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -44,7 +52,7 @@ class _LoginState extends State<Login> {
                   child: Container(
                     padding: EdgeInsets.all(20),
                     child: Text(
-                      "Ekspedisi - Central",
+                      "DevTemplate",
                       style: global.styleText2(35.0),
                     ),
                   ),

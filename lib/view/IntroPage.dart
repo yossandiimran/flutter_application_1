@@ -42,7 +42,7 @@ class _IntroPageState extends State<IntroPage> {
               Container(
                 margin: EdgeInsets.all(50),
                 child: Text(
-                  "Selamat Datang di Aplikasi Ekspedisi Central",
+                  "Selamat Datang di Aplikasi DevTemplate",
                   textAlign: TextAlign.center,
                   style: global.styleText2(20.0),
                 ),
@@ -66,7 +66,7 @@ class _IntroPageState extends State<IntroPage> {
               Container(
                 margin: EdgeInsets.all(50),
                 child: Text(
-                  "Aplikasi Khusus Ekspedisi by Central Developer V.1.0",
+                  "Aplikasi Khusus Testing by Central Developer V.1.0",
                   textAlign: TextAlign.center,
                   style: global.styleText2(20.0),
                 ),

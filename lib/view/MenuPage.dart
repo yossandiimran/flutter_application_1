@@ -35,7 +35,7 @@ class _MenuPageState extends State<MenuPage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.gps_fixed),
-            label: 'Ekspedisi',
+            label: 'Menu 1',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.keyboard_arrow_up_sharp),
@@ -43,7 +43,7 @@ class _MenuPageState extends State<MenuPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications_active_outlined),
-            label: 'Informasi',
+            label: 'Notifikasi',
           ),
         ],
         currentIndex: selectIndexNow,
@@ -57,7 +57,7 @@ class _MenuPageState extends State<MenuPage> {
     if (selectIndexNow == 0) {
       return Container(
         child: Center(
-          child: Text("Ekspedisi"),
+          child: Text("Menu 1"),
         ),
       );
       //Or Call Another Class
@@ -66,7 +66,7 @@ class _MenuPageState extends State<MenuPage> {
     } else {
       return Container(
         child: Center(
-          child: Text("Informasi"),
+          child: Text("Notifikasi"),
         ),
       );
       //Or Call Another Class

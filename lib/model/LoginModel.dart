@@ -50,36 +50,21 @@ class UserLogin {
   String? nrp;
   String? nama;
   String? email;
-  String? jenisUser;
-  String? usap;
-  String? psap;
-  String? wSite;
-  String? oSite;
-  String? pSite;
+  int? jenisUser;
 
   UserLogin(
       {this.id,
       this.nrp,
       this.nama,
       this.email,
-      this.jenisUser,
-      this.usap,
-      this.psap,
-      this.wSite,
-      this.oSite,
-      this.pSite});
+      this.jenisUser,});
 
   UserLogin.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     nrp = json['nrp'];
     nama = json['nama'];
     email = json['email'];
-    jenisUser = json['jenis_user'];
-    usap = json['usap'];
-    psap = json['psap'];
-    wSite = json['w_site'];
-    oSite = json['o_site'];
-    pSite = json['p_site'];
+    jenisUser = json['permission_access'];
   }
 
   Map<String, dynamic> toJson() {
@@ -88,12 +73,7 @@ class UserLogin {
     data['nrp'] = this.nrp;
     data['nama'] = this.nama;
     data['email'] = this.email;
-    data['jenis_user'] = this.jenisUser;
-    data['usap'] = this.usap;
-    data['psap'] = this.psap;
-    data['w_site'] = this.wSite;
-    data['o_site'] = this.oSite;
-    data['p_site'] = this.pSite;
+    data['permission_access'] = this.jenisUser;
     return data;
   }
 }
