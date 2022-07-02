@@ -9,6 +9,7 @@ int selectIndexNow = 1;
 
 class Global {
   late String name, email, token, typeUser;
+  late String? deviceToken;
 
   getWidth(context) {
     return MediaQuery.of(context).size.width;
