@@ -16,6 +16,7 @@ class LoginService {
       await http.post(url, body: {
         'email': this.username,
         'password': this.password,
+        'device_token': global.deviceToken,
       }).then((res) async {
         var data = json.decode(res.body);
         var lm = LoginModel.fromJson(data);
